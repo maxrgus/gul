@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+.nav-header {
+    background-color: #004b89;
+    background-image: none;
+}
+.nav > li > a {
+    color: #000;
+}
+.nav > li.active {
+    border-left: none;
+    background: #004b89;
+}
+ul.nav-second-level {
+    background: #f3f3f4;
+}
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
+    background-color: #fff;
+    color: #004b89;
+}
+.nav-second-level > li > a {
+    color: #000;
+}
+.logo-element {
+    background-image: url("/goteborgs_universitet_ikon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 35px 0;
+}
+body.mini-navbar .nav-header {
+    padding: 0;
+    background-color: #fff;
+}
+.mini-navbar .site-brand {
+    display: none;
+}
+
