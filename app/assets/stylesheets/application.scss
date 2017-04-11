@@ -53,4 +53,17 @@ body.mini-navbar .nav-header {
 .mini-navbar .site-brand {
     display: none;
 }
-
+.mini-navbar .nav .nav-second-level {
+    position: absolute;
+    left: 70px;
+    top: 0;
+    background-color: #004b89;
+    padding: 10px 10px 10px 10px;
+    font-size: 12px;
+}
+.mini-navbar .nav-second-level li a {
+    color: #fff;
+}
+.middle-box.text-center.loginscreen.animated.fadeInDown {
+    padding-top: 30vh;
+}

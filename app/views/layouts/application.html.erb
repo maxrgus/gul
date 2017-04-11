@@ -30,7 +30,7 @@
                                 <li><a href="contacts.html">Kontakter</a></li>
                                 <li><a href="mailbox.html">Inkorg</a></li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">Logga ut</a></li>
+                                <li><%= link_to('Logga ut', destroy_user_session_path, :method => :delete) %> </li>
                             </ul>
                         </div>
                         <div class="logo-element">
@@ -72,6 +72,37 @@
         </div>
         </nav>
         </div>
+                <div class="row  border-bottom white-bg dashboard-header">
+
+                    <div class="col-md-3">
+                        <h2>Välkommen Max</h2>
+                        <small>Du har 42 meddelanden och 6 notifikationer.</small>
+                    </div>
+                    <div class="col-md-8">
+                        <h4>
+                            Senaste från Ladok
+                        </h4>
+                        <div class="col-md-6">
+                            <p>
+                                Kursregistreringar denna termin
+                                <ul>
+                                    <li>Beslutstödssystem (TIG163) - 15.0 poäng</li>
+                                    <li>Interaktionsdesign (TIG164) - 15.0 poäng</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                Kursregistreringar denna termin
+                                <ul>
+                                    <li>Salstentamen TIG163 - 7.5 poäng - VG</li>
+                                    <li>Skriftlig gruppuppgift TIG163 - 7.5 poäng - G</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+            </div>
             <%= yield %>
         </div>
     </div>
